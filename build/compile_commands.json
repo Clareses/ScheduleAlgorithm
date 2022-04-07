@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/13152/Desktop/ScheduleAlgorithm/build",
+  "command": "F:\\Environment\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/example.dir/includes_CXX.rsp -g -o CMakeFiles\\example.dir\\project\\test.cpp.obj -c C:\\Users\\13152\\Desktop\\ScheduleAlgorithm\\project\\test.cpp",
+  "file": "C:/Users/13152/Desktop/ScheduleAlgorithm/project/test.cpp"
+},
+{
+  "directory": "C:/Users/13152/Desktop/ScheduleAlgorithm/build",
+  "command": "F:\\Environment\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/example.dir/includes_CXX.rsp -g -o CMakeFiles\\example.dir\\project\\src\\Course.cpp.obj -c C:\\Users\\13152\\Desktop\\ScheduleAlgorithm\\project\\src\\Course.cpp",
+  "file": "C:/Users/13152/Desktop/ScheduleAlgorithm/project/src/Course.cpp"
+},
+{
+  "directory": "C:/Users/13152/Desktop/ScheduleAlgorithm/build",
+  "command": "F:\\Environment\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/example.dir/includes_CXX.rsp -g -o CMakeFiles\\example.dir\\project\\src\\Schedule.cpp.obj -c C:\\Users\\13152\\Desktop\\ScheduleAlgorithm\\project\\src\\Schedule.cpp",
+  "file": "C:/Users/13152/Desktop/ScheduleAlgorithm/project/src/Schedule.cpp"
+},
+{
+  "directory": "C:/Users/13152/Desktop/ScheduleAlgorithm/build",
+  "command": "F:\\Environment\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/example.dir/includes_CXX.rsp -g -o CMakeFiles\\example.dir\\project\\src\\ScheduleManager.cpp.obj -c C:\\Users\\13152\\Desktop\\ScheduleAlgorithm\\project\\src\\ScheduleManager.cpp",
+  "file": "C:/Users/13152/Desktop/ScheduleAlgorithm/project/src/ScheduleManager.cpp"
+}
+]
