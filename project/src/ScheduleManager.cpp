@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-03-01 12:41:47
  * @LastEditors  : Liao
- * @LastEditTime : 2022-04-07 23:24:37
+ * @LastEditTime : 2022-04-08 15:21:22
  * @FilePath     : \project\src\ScheduleManager.cpp
  * Copyright 2022 FZU Liao, All Rights Reserved.
  */
@@ -52,6 +52,6 @@ Schedule ScheduleManager::GeneCrossover(Schedule schedule_A,
     }
 }
 
-int ScheduleManager::GetConflictCost(Schedule schedule) {
+int ScheduleManager::GetConflictCost(Schedule& schedule) {
     return schedule.GetConflictNum();
 }

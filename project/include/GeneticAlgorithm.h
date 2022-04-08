@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-02-26 14:09:40
  * @LastEditors  : Liao
- * @LastEditTime : 2022-04-07 23:10:45
+ * @LastEditTime : 2022-04-08 14:49:46
  * @FilePath     : \project\include\GeneticAlgorithm.h
  * \project\include\GeneticAlgorithm.h Copyright
  * 2022 FZU Liao, All Rights Reserved.
@@ -12,6 +12,7 @@
 
 #include <queue>
 #include <vector>
+#include <algorithm>
 #include "RandomNum.h"
 
 template <class IndividualType, class ManagerType>
@@ -179,5 +180,5 @@ class GeneticAlgorithm {
      * @return int 冲突代价的值
      * @example:
      */
-    int GetConflictCost(const IndividualType individual);
+    int GetConflictCost(IndividualType& individual);
 };

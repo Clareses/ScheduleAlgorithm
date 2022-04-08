@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-03-01 12:41:37
  * @LastEditors  : Liao
- * @LastEditTime : 2022-03-02 13:51:43
+ * @LastEditTime : 2022-04-08 15:21:40
  * @FilePath     : \project\include\ScheduleManager.h
  * Copyright 2022 FZU Liao, All Rights Reserved.
  */
@@ -29,5 +29,5 @@ class ScheduleManager : public GeneticAlgorithm<Schedule, ScheduleManager> {
 
     Schedule GeneCrossover(Schedule schedule_A, Schedule schedule_B);
 
-    int GetConflictCost(const Schedule sechedule);
+    int GetConflictCost(Schedule& sechedule);
 };

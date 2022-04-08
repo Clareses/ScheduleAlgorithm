@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-03-01 12:40:41
  * @LastEditors  : Liao
- * @LastEditTime : 2022-03-02 14:35:03
+ * @LastEditTime : 2022-04-08 13:20:42
  * @FilePath     : \project\src\Course.cpp
  * Copyright 2022 FZU Liao, All Rights Reserved.
  */
@@ -47,7 +47,7 @@ void Course::InitRandomSelf(std::vector<Classroom> classroomList,
     int temp;
     temp = GetRandomNum(0, classroomList.size() - 1);
     this->classroom = classroomList[temp];
-    temp = GetRandomNum(1, slotRange);
+    temp = GetRandomNum(0, slotRange-1);
     this->slot = temp;
 }
 
