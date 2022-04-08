@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-04-07 22:37:53
  * @LastEditors  : Liao
- * @LastEditTime : 2022-04-08 15:15:37
+ * @LastEditTime : 2022-04-08 15:57:47
  * @FilePath     : \project\test.cpp
  * Copyright 2022 FZU Liao, All Rights Reserved.
  */
@@ -22,14 +22,19 @@ int courseTypeNum;
 int classroomNum;
 
 void input();
+
 void output(Schedule schedule);
 
 int main() {
+    //完成读取并初始化courseList和classroomList
     input();
+    //完成初始化ScheduleManager
     Schedule temp(courseList, &classroomList, 20);
     ScheduleManager myManager(100, 0.3, 10, 500, temp);
     printf("Loading...\n");
+    //获取最优解
     Schedule result = myManager.GetEvolutionResult();
+    //输出最优解
     output(result);
     return 0;
 }
@@ -53,6 +58,7 @@ void input() {
         cin >> className;
         scanf("%d,%d,%d,%d", &beginWeek, &endWeek, &weekHours, &numOfStudents);
         weekHours/=2;
+        //按学时数向courseList中添加课程
         while (weekHours--)
             courseList.push_back(
                 Course(className, beginWeek, endWeek, numOfStudents));

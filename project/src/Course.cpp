@@ -3,7 +3,7 @@
  * @Author       : FZU Liao
  * @Date         : 2022-03-01 12:40:41
  * @LastEditors  : Liao
- * @LastEditTime : 2022-04-08 13:20:42
+ * @LastEditTime : 2022-04-08 16:07:25
  * @FilePath     : \project\src\Course.cpp
  * Copyright 2022 FZU Liao, All Rights Reserved.
  */
@@ -27,6 +27,7 @@ std::string Classroom::GetId() {
 }
 
 bool Course::IsCross(Course otherCourse) {
+    //判断两门课程是否有交叉
     if (this->beginWeek >= otherCourse.endWeek ||
         this->endWeek <= otherCourse.beginWeek)
         return true;
@@ -75,7 +76,7 @@ Classroom Course::GetClassroom() {
     return this->classroom;
 }
 
-//没有考虑好一种情况（一周课多于2节，有个45节这样，则interval和continue很难保证）
+//一些逻辑冲突计算...
 int Course::GetConflictNumWithAnother(Course otherCourse) {
     int ConflictNum = 0;
     bool slotConflict = this->slot == otherCourse.slot;
