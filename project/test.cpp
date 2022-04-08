@@ -72,6 +72,10 @@ void input() {
 
 void output(Schedule result) {
     printf("\n");
+    if(result.GetConflictNum() > 500){
+        printf("No solution\n");
+        return;
+    }
     printf("%-10s %-10s %-10s %-10s\n", "Course", "Classroom", "Weekday", "Time");
     vector<Course> courseList = result.GetCourseList();
     sort(courseList.begin(), courseList.end(),
